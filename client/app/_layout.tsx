@@ -11,5 +11,9 @@ export default function RootLayout() {
     return null;
   }
 
-  return <Stack />;
+  return (
+    <Stack>
+      <Stack.Screen name="Landing" options={{headerShown: false}} />
+    </Stack>
+  )
 }
